@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Портфолио</title>
+  <meta name="description" content="Персональное портфолио">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/aboutme.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Портфолио</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#works">Проекты</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>Салют, я Даня!</h2>
+          <p>
+            Я начинающий программист и студент <strong>ВШПИ</strong>.<br>
+            В рамках обучения я изучаю различные технологии и языки программирования, включая C++, Python, базы данных и
+            фронтенд-разработку.<br>
+            Это всё, конечно, очень сложно, но очень интересно, а иногда не очень.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="images/myphoto.png" alt="Фотография автора портфолио" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Мои проекты</h2>
+        <div class="projects-grid">
+          <article class="project-item">
+            <img src="images/project1.png" alt="YouTube Mood Tracker" loading="lazy">
+            <h3>YouTube Trands Analyser</h3>
+            <p>
+              Telegram-бот, который анализирует комментарии под видео на YouTube и определяет общий эмоциональный
+              настрой аудитории (позитивный, негативный, нейтральный).<br>
+              Пользователь отправляет ссылку на видео, а бот возвращает статистику настроений и ключевые слова из
+              комментариев.
+            </p>
+            <p><strong>Стек технологий:</strong></p>
+            <ul>
+              <li>Python (Aiogram, Google-Api-Python-Client)</li>
+              <li>SciPy</li>
+              <li>SQLite</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="project-item">
+            <img src="images/project2.png" alt="TaskBuddy" loading="lazy">
+            <h3>RemindMeBot</h3>
+            <p>
+              Telegram-бот-напоминалка с функцией планирования задач и гибким расписанием.<br>
+              Пользователь может задавать напоминания с повторениями (ежедневно, еженедельно), а бот будет присылать
+              уведомления с возможностью отложить задачу или отметить её выполненной.
+            </p>
+            <p><strong>Стек технологий:</strong></p>
+            <ul>
+              <li>Python (Aiogram)</li>
+              <li>PostgreSQL</li>
+              <li>APScheduler</li>
+              <li>Google-API</li>
+            </ul>
+          </article>
+
+          <article class="project-item">
+            <img src="images/project3.png" alt="BugBlaster" loading="lazy">
+            <h3>BugBlaster</h3>
+            <p>
+              CLI-утилита для автоматического поиска и логирования багов в коде на основе анализа логов и тестов.<br>
+              Пользователь указывает путь к проекту, а утилита сканирует код, запускает тесты и генерирует отчёт с
+              потенциальными проблемами.
+            </p>
+            <p><strong>Стек технологий:</strong></p>
+            <ul>
+              <li>Python (Click, Pytest)</li>
+              <li>Loguru</li>
+              <li>GitHub Actions</li>
+              <li>JSON</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Мои навыки</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img src="images/icons/python.png" alt="Python" loading="lazy">
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/cpp.png" alt="C++" loading="lazy">
+            <p>C++</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/html.png" alt="HTML" loading="lazy">
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/css.png" alt="CSS" loading="lazy">
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/js.png" alt="JS" loading="lazy">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/git.png" alt="Git" loading="lazy">
+            <p>Git</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/api.png" alt="API" loading="lazy">
+            <p>API</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/database.png" alt="SQL" loading="lazy">
+            <p>Databases</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/docker.png" alt="Docker" loading="lazy">
+            <p>Docker</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/linux.png" alt="Linux" loading="lazy">
+            <p>Linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="container">
+        <h2>Связь со мной</h2>
+        <div class="feedback-container">
+          <form id="feedback-form" method="post" action="#">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025. К сожалению, никакие права не защищены. Я таково не умею :(</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

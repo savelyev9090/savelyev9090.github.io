@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #fcfafa;
+  --background-color: #e5e2e2;
+  --background2-color: #d9d7d7;
+  --accent-color: #007BFF;
+  --text-color: #000000;
+  --button-color: #05c612;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.75;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 50px 0;
+}
