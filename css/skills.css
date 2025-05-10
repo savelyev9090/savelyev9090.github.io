@@ -44,8 +44,8 @@
 }
 
 .skills-list .skill-item img {
-  width: 80px;
-  height: 80px;
+  max-width: 100px;
+  height: auto;
   object-fit: contain;
   display: block;
   margin: auto;
