@@ -1,3 +1,7 @@
+.noScroll {
+  overflow: hidden;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -13,43 +17,131 @@
   margin-bottom: 20px;
 }
 
-.project-item {
-  background: var(--secondary-color);
-  padding: 30px;
-  border-radius: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  min-height: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#projects .container {
+  display: flex;
+  gap: 15px;
+  width: 600px;
+  padding: 20px 0 20px 0;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 18px;
 }
 
-.project-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+#projects .container:hover {
+  background-color: var(--background2-color);
 }
 
-.project-item img {
+#projects .container button {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  
+  border: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  #projects .container {
+    width: 80%;
+    padding: 15px 20px 15px 15px;
+  }
+
+  #projects .container button {
+    font-size: 1.5rem;
+  }
+}
+
+#projects .container span {
+  width: 30px;
+  height: 30px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 900px;
+  max-height: 90%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.popup-details {
+  text-align: left;
+}
+
+.popup-details h3 {
+  text-align: center;
+}
+
+.popup-img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.project-item img:hover {
-  transform: scale(1.1);
+.popup-title {
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 
-.project-item h3 {
-  margin: 0 0 10px;
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.popup-description {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.project-item ul {
-  padding-left: 30px;
-  list-style-position: outside;
-  text-align: left;
-  margin: 20px 0 0;
+.popup-stack {
+  list-style: none;
+  padding: 0;
+}
+
+.popup-stack li::before {
+  content: "— ";
+  color: #444;
+}
+
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-prev,
+.popup-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.popup-prev {
+  left: 20px;
+}
+.popup-next {
+  right: 20px;
 }

@@ -3,13 +3,13 @@
   --secondary-color: #fcfafa;
   --background-color: #e5e2e2;
   --background2-color: #d9d7d7;
-  --accent-color: #007BFF;
+  --accent-color: #007bff;
   --text-color: #000000;
   --button-color: #05c612;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.75;
