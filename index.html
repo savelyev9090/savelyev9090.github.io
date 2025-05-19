@@ -1,239 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
 
-    <title>Портфолио</title>
-    <meta name="description" content="Персональное портфолио" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+  <title>Портфолио</title>
+  <meta name="description" content="Персональное портфолио">
 
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/aboutme.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/countdown.css" />
-    <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/feedback.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/delaypopup.css" />
-  </head>
+  <link rel="stylesheet" href="css/style.css">
 
-  <body>
-    <header>
-      <div class="container header-container">
-        <h1 class="logo">Портфолио</h1>
-        <div class="burger" id="burger" aria-label="Меню">
-          <svg width="30" height="30" viewBox="0 0 100 80" fill="currentColor">
-            <rect id="burger__first-line" width="100" height="10"></rect>
-            <rect id="burger__second-line" y="30" width="100" height="10"></rect>
-            <rect id="burger__third-line" y="60" width="100" height="10"></rect>
-          </svg>
-        </div>
-        <nav id="nav" class="nav">
-          <ul class="nav-list">
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#feedback">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/aboutme.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/countdown.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/delaypopup.css">
+</head>
 
-    <main>
-      <section id="about">
-        <div class="container about-container">
-          <div class="about-text">
-            <h2>Салют, я Даня!</h2>
-            <p>
-              Я начинающий программист и студент <strong>ВШПИ</strong>.<br />
-              В рамках обучения я изучаю различные технологии и языки
-              программирования, включая C++, Python, базы данных и
-              фронтенд-разработку.<br />
-              Это всё, конечно, очень сложно, но очень интересно, а иногда не
-              очень.
-            </p>
-          </div>
-          <div class="about-photo">
-            <img
-              src="images/myphoto.png"
-              alt="Фотография автора портфолио"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="container" id="open-projects-popup">
-          <button>Посмотрите мои проекты</button>
-          <span>
-            <svg
-              fill="#000000"
-              height="30px"
-              width="30px"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 330 330"
-              xml:space="preserve"
-            >
-              <path
-                id="XMLID_223_"
-                d="M325.606,154.394l-75-75.001c-4.289-4.291-10.743-5.572-16.347-3.252c-5.605,2.322-9.26,7.792-9.26,13.858
-            V150H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h210v60c0,6.067,3.654,11.537,9.26,13.858c1.855,0.769,3.805,1.143,5.737,1.143
-            c3.903,0,7.74-1.524,10.609-4.395l75-75C331.465,169.749,331.465,160.252,325.606,154.394z"
-              />
-            </svg>
-          </span>
-        </div>
-
-        <div id="popup" class="popup hidden">
-          <span class="popup-close">&times;</span>
-          <div class="popup-content">
-            <img class="popup-img" src="" alt="" />
-            <div class="popup-details">
-              <h3 class="popup-title"></h3>
-              <p class="popup-description"></p>
-              <ul class="popup-stack"></ul>
-            </div>
-          </div>
-          <button class="popup-prev">&#10094;</button>
-          <button class="popup-next">&#10095;</button>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="container">
-          <h2>Мои навыки</h2>
-          <div class="skills-list">
-            <div class="skill-item">
-              <img src="images/icons/python.png" alt="Python" loading="lazy" />
-              <p>Python</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/cpp.png" alt="C++" loading="lazy" />
-              <p>C++</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/html.png" alt="HTML" loading="lazy" />
-              <p>HTML</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/css.png" alt="CSS" loading="lazy" />
-              <p>CSS</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/js.png" alt="JS" loading="lazy" />
-              <p>JavaScript</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/git.png" alt="Git" loading="lazy" />
-              <p>Git</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/api.png" alt="API" loading="lazy" />
-              <p>API</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/database.png" alt="SQL" loading="lazy" />
-              <p>Databases</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/docker.png" alt="Docker" loading="lazy" />
-              <p>Docker</p>
-            </div>
-            <div class="skill-item">
-              <img src="images/icons/linux.png" alt="Linux" loading="lazy" />
-              <p>Linux</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="countdown" class="countdown-section">
-        <div>
-          <h2>До окончания бакалавриата МФТИ осталось:</h2>
-          <div class="countdown">
-            <div><span id="days">0</span><small>дней</small></div>
-            <div><span id="hours">0</span><small>часов</small></div>
-            <div><span id="minutes">0</span><small>минут</small></div>
-            <div><span id="seconds">0</span><small>секунд</small></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="feedback">
-        <div class="container">
-          <h2>Связь со мной</h2>
-          <div class="feedback-container">
-            <form id="feedback-form" method="post" action="#">
-              <label for="name">Имя:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Ваше имя"
-                required
-              />
-
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Ваш email"
-                required
-              />
-
-              <label for="message">Сообщение:</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Ваше сообщение"
-                required
-              ></textarea>
-
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>
-          &copy; 2025. К сожалению, никакие права не защищены. Я таково не умею
-          :(
-        </p>
-      </div>
-    </footer>
-
-    <div id="popup-message" class="popup-message hidden">
-      <div class="popup-message-box">
-        <p>
-          👋 Привет! Спасибо, что заглянул. Если есть вопросы или предложения —
-          свяжитесь со мной!
-        </p>
-        <button id="popup-message-close">Закрыть</button>
-      </div>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Портфолио</h1>
+      <button class="burger" id="burger" aria-label="Меню">
+        <svg width="30" height="30" viewBox="0 0 100 80" fill="currentColor">
+          <rect id="burger__first-line" width="100" height="10"></rect>
+          <rect id="burger__second-line" y="30" width="100" height="10"></rect>
+          <rect id="burger__third-line" y="60" width="100" height="10"></rect>
+        </svg>
+      </button>
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#feedback">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script/header.js"></script>
-    <script src="script/projects.js"></script>
-    <script src="script/countdown.js"></script>
-    <script src="script/submitForm.js"></script>
-    <script src="script/delaypopup.js"></script>
-  </body>
+  <main>
+    <section id="about">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>Салют, я Даня!</h2>
+          <p>
+            Я начинающий программист и студент <strong>ВШПИ</strong>.<br>
+            В рамках обучения я изучаю различные технологии и языки
+            программирования, включая C++, Python, базы данных и
+            фронтенд-разработку.<br>
+            Это всё, конечно, очень сложно, но очень интересно, а иногда не
+            очень.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="images/myphoto.png" alt="Фотография автора портфолио" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container" id="open-projects-popup">
+        <button>Посмотрите мои проекты</button>
+        <span>
+          <svg fill="#000000" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+            <path id="XMLID_223_" d="M325.606,154.394l-75-75.001c-4.289-4.291-10.743-5.572-16.347-3.252c-5.605,2.322-9.26,7.792-9.26,13.858
+            V150H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h210v60c0,6.067,3.654,11.537,9.26,13.858c1.855,0.769,3.805,1.143,5.737,1.143
+            c3.903,0,7.74-1.524,10.609-4.395l75-75C331.465,169.749,331.465,160.252,325.606,154.394z">
+          </svg>
+        </span>
+      </div>
+
+      <div id="popup" class="popup hidden">
+        <span class="popup-close">&times;</span>
+        <div class="popup-content">
+          <img class="popup-img" src="images/placeholder.png" alt="Изображение проекта">
+          <div class="popup-details">
+            <h3 class="popup-title">Название проекта</h3>
+            <p class="popup-description"></p>
+            <ul class="popup-stack"></ul>
+          </div>
+        </div>
+        <button class="popup-prev">&#10094;</button>
+        <button class="popup-next">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Мои навыки</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img src="images/icons/python.png" alt="Python" loading="lazy">
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/cpp.png" alt="C++" loading="lazy">
+            <p>C++</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/html.png" alt="HTML" loading="lazy">
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/css.png" alt="CSS" loading="lazy">
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/js.png" alt="JS" loading="lazy">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/git.png" alt="Git" loading="lazy">
+            <p>Git</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/api.png" alt="API" loading="lazy">
+            <p>API</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/database.png" alt="SQL" loading="lazy">
+            <p>Databases</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/docker.png" alt="Docker" loading="lazy">
+            <p>Docker</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/icons/linux.png" alt="Linux" loading="lazy">
+            <p>Linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="countdown-section">
+      <div>
+        <h2>До окончания бакалавриата МФТИ осталось:</h2>
+        <div class="countdown">
+          <div><span id="days">0</span><small>дней</small></div>
+          <div><span id="hours">0</span><small>часов</small></div>
+          <div><span id="minutes">0</span><small>минут</small></div>
+          <div><span id="seconds">0</span><small>секунд</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="container">
+        <h2>Связь со мной</h2>
+        <div class="feedback-container">
+          <form id="feedback-form" method="post" action="#">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2025. К сожалению, никакие права не защищены. Я таково не умею
+        :(
+      </p>
+    </div>
+  </footer>
+
+  <div id="popup-message" class="popup-message hidden">
+    <div class="popup-message-box">
+      <p>
+        👋 Привет! Спасибо, что заглянул. Если есть вопросы или предложения —
+        свяжитесь со мной!
+      </p>
+      <button id="popup-message-close">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script/header.js"></script>
+  <script src="script/projects.js"></script>
+  <script src="script/countdown.js"></script>
+  <script src="script/submitForm.js"></script>
+  <script src="script/delaypopup.js"></script>
+</body>
+
 </html>
