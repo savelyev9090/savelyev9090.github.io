@@ -72,3 +72,10 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeBtn.click();
   }
 });
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.classList.add("hidden");
+    document.body.classList.remove("noScroll");
+  }
+});
